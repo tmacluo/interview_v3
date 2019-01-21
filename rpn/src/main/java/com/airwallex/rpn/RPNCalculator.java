@@ -21,7 +21,7 @@ public class RPNCalculator {
 	
 	/** stack contains the real numbers*/
 	private Stack<String> numsStack = new Stack<String>();
-	/** */
+	/** manage all historic status of numsStack to perform undo actions */
 	private MementoCaretaker mc = new MementoCaretaker();
 	
 	public void calc(String inputStr){
